@@ -5,12 +5,12 @@ import EMagazine from "./pages/EMagazine";
 import FatafatNews from "./pages/FatafatNews";
 import Videos from "./pages/Videos";
 import BottomNavbar from "./components/BottomNavbar";
-import './styles/tailwind.css'; // Make sure this path matches your generated CSS
+import './styles/tailwind.css';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen pb-16"> {/* Padding for bottom navbar */}
+      <div className="min-h-screen pb-16 bg-gray-50"> {/* Added light gray background */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/emagazine" element={<EMagazine />} />

@@ -44,7 +44,7 @@ const mockVideos = [
     views: '2.1M बार देखा गया',
     date: '1 सप्ताह पहले',
   },
-    {
+  {
     id: '7',
     title: 'दिल्ली में तेज़ बारिश के बाद जलभराव, देखें ताज़ा दृश्य',
     thumbnail: 'https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg',
