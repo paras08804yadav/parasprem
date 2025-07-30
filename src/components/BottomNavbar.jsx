@@ -7,7 +7,7 @@ export default function BottomNavbar() {
       <NavLink 
         to="/" 
         className={({ isActive }) => 
-          `flex flex-col items-center text-xs ${isActive ? 'text-blue-600' : 'text-gray-600'}`
+          `flex flex-col items-center text-xs ${isActive ? 'text-red-600' : 'text-gray-600'}`
         }
       >
         <FaHome className="text-xl mb-1" />
@@ -17,7 +17,7 @@ export default function BottomNavbar() {
       <NavLink 
         to="/emagazine" 
         className={({ isActive }) => 
-          `flex flex-col items-center text-xs ${isActive ? 'text-blue-600' : 'text-gray-600'}`
+          `flex flex-col items-center text-xs ${isActive ? 'text-red-600' : 'text-gray-600'}`
         }
       >
         <FaBookOpen className="text-xl mb-1" />
@@ -27,7 +27,7 @@ export default function BottomNavbar() {
       <NavLink 
         to="/fatafat" 
         className={({ isActive }) => 
-          `flex flex-col items-center text-xs ${isActive ? 'text-blue-600' : 'text-gray-600'}`
+          `flex flex-col items-center text-xs ${isActive ? 'text-red-600' : 'text-gray-600'}`
         }
       >
         <FaNewspaper className="text-xl mb-1" />
@@ -37,7 +37,7 @@ export default function BottomNavbar() {
       <NavLink 
         to="/videos" 
         className={({ isActive }) => 
-          `flex flex-col items-center text-xs ${isActive ? 'text-blue-600' : 'text-gray-600'}`
+          `flex flex-col items-center text-xs ${isActive ? 'text-red-600' : 'text-gray-600'}`
         }
       >
         <FaPlay className="text-xl mb-1" />

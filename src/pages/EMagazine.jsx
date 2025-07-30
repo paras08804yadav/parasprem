@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 export default function EMagazine() {
-  // Magazine data for 2 years (2024-2025) x 12 months + 8 months (2026)
   const magazineData = [
   {
     year: 2024,
@@ -9,7 +8,7 @@ export default function EMagazine() {
       {
         id: 1,
         title: 'जनवरी 2024',
-        image: 'https://images.unsplash.com/photo-1544931170-3ca1334cce88?w=300&h=400&fit=crop&q=60',
+        image: 'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=300&h=400&fit=crop&q=60',
         desc: 'नववर्ष विशेषांक: नए साल की नई उम्मीदें'
       },
       {

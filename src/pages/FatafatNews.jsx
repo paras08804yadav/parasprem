@@ -110,7 +110,7 @@ export default function FatafatNews() {
 return (
   <div 
     ref={newsRef}
-    className="h-screen w-full snap-y snap-mandatory overflow-y-scroll bg-white scrollbar-hide"
+    className="h-screen w-full mt-14 snap-y snap-mandatory overflow-y-scroll bg-white scrollbar-hide"
     onScroll={handleScroll}
   >
     {newsItems.map((news, index) => (

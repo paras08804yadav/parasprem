@@ -6,11 +6,12 @@ import FatafatNews from "./pages/FatafatNews";
 import Videos from "./pages/Videos";
 import BottomNavbar from "./components/BottomNavbar";
 import './styles/tailwind.css';
-
+import Header from "./components/Header"; 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen pb-16 bg-gray-50"> {/* Added light gray background */}
+      <Header />
+      <div className="min-h-screen pb-16 bg-gray-50"> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/emagazine" element={<EMagazine />} />

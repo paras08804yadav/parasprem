@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import CategoryBar from "../components/CategoryBar";
+import AdCarousel from "../components/AdCarousel";
+import NewsSection from "../components/NewsSection";
+
 
 export default function Home() {
-  // Advertisement carousel data
   const ads = [
     {
       id: 1,
@@ -130,83 +132,10 @@ export default function Home() {
   };
 
   return (
-    <div className="pb-16"> {/* Padding for bottom navbar */}
-      {/* Advertisement Carousel */}
-      <div className="relative h-48 md:h-64 w-full overflow-hidden">
-        {ads.map((ad, index) => (
-          <div
-            key={ad.id}
-            className={`absolute inset-0 transition-opacity duration-500 ${index === currentAdIndex ? 'opacity-100' : 'opacity-0'}`}
-          >
-            <img
-              src={ad.image}
-              alt={ad.title}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 text-white">
-              <h3 className="text-xl font-bold">{ad.title}</h3>
-              <p>{ad.desc}</p>
-            </div>
-          </div>
-        ))}
-        
-        {/* Navigation Arrows */}
-        <button
-          onClick={goToPrevAd}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full"
-        >
-          <FaChevronLeft />
-        </button>
-        <button
-          onClick={goToNextAd}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full"
-        >
-          <FaChevronRight />
-        </button>
-        
-        {/* Indicators */}
-        <div className="absolute bottom-2 left-0 right-0 flex justify-center space-x-2">
-          {ads.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => {
-                setCurrentAdIndex(index);
-                resetTimer();
-              }}
-              className={`w-3 h-3 rounded-full ${index === currentAdIndex ? 'bg-white' : 'bg-gray-400'}`}
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* News Section */}
-      <div className="p-4">
-        <h2 className="text-2xl font-bold mb-4">ताजा खबरें</h2>
-        
-        <div className="space-y-4">
-          {newsItems.map((news) => (
-            <div key={news.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="flex">
-                <div className="w-1/3">
-                  <img
-                    src={news.image}
-                    alt={news.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="w-2/3 p-3">
-                  <div className="flex items-center mb-1">
-                    <span className="text-sm font-medium text-red-600">{news.category}</span>
-                    <span className="text-xs text-gray-500 ml-2">{news.time}</span>
-                  </div>
-                  <h3 className="font-bold text-lg mb-1">{news.title}</h3>
-                  <p className="text-gray-700 text-sm">{news.desc}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <div className="pt-16 pb-16">
+      <CategoryBar />
+      <AdCarousel ads={ads} />
+      <NewsSection newsItems={newsItems} />
     </div>
   );
 }
