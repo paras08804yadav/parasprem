@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useRef } from 'react';
 import { FaHeart, FaShare, FaBookmark, FaEllipsisH } from 'react-icons/fa';
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/reels.css';
 import Home from "./pages/Home";
@@ -10,6 +11,7 @@ import Header from "./components/Header";
 function App() {
   return (
     <Router>
+      <div className="px-0 md:px-[200px]">
       <Header />
       <div className="min-h-screen pb-16 bg-gray-50"> 
         <Routes>
@@ -20,6 +22,7 @@ function App() {
         </Routes>
       </div>
       <BottomNavbar />
+      </div>
     </Router>
   );
 }

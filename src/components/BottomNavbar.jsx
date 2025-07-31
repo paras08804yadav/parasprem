@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaHome, FaBookOpen, FaNewspaper, FaPlay } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
