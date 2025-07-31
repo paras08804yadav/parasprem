@@ -1,12 +1,77 @@
 import React from 'react';
-import { useState, useEffect, useRef } from 'react';
 import CategoryBar from "../components/CategoryBar";
 import AdCarousel from "../components/AdCarousel";
 import NewsSection from "../components/NewsSection";
+import VideoSection from "../components/VideoSection";
 import NewsSection2 from "../components/NewsSection2";
 
-
+const mockVideos = [
+  {
+    id: '1',
+    title: 'दिल्ली में तेज़ बारिश के बाद जलभराव, देखें ताज़ा दृश्य',
+    thumbnail: 'https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg',
+    views: '1.2M बार देखा गया',
+    date: '2 दिन पहले',
+  },
+  {
+    id: '2',
+    title: 'चंद्रयान 3 की सफल लैंडिंग - भारत ने रचा इतिहास',
+    thumbnail: 'https://i.ytimg.com/vi/tgbNymZ7vqY/hqdefault.jpg',
+    views: '3.4M बार देखा गया',
+    date: '5 दिन पहले',
+  },
+  {
+    id: '3',
+    title: 'PM मोदी का नया संबोधन | जानें क्या बोले',
+    thumbnail: 'https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg',
+    views: '2.1M बार देखा गया',
+    date: '1 सप्ताह पहले',
+  },
+    {
+    id: '4',
+    title: 'दिल्ली में तेज़ बारिश के बाद जलभराव, देखें ताज़ा दृश्य',
+    thumbnail: 'https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg',
+    views: '1.2M बार देखा गया',
+    date: '2 दिन पहले',
+  },
+  {
+    id: '5',
+    title: 'चंद्रयान 3 की सफल लैंडिंग - भारत ने रचा इतिहास',
+    thumbnail: 'https://i.ytimg.com/vi/tgbNymZ7vqY/hqdefault.jpg',
+    views: '3.4M बार देखा गया',
+    date: '5 दिन पहले',
+  },
+  {
+    id: '6',
+    title: 'PM मोदी का नया संबोधन | जानें क्या बोले',
+    thumbnail: 'https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg',
+    views: '2.1M बार देखा गया',
+    date: '1 सप्ताह पहले',
+  },
+  {
+    id: '7',
+    title: 'दिल्ली में तेज़ बारिश के बाद जलभराव, देखें ताज़ा दृश्य',
+    thumbnail: 'https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg',
+    views: '1.2M बार देखा गया',
+    date: '2 दिन पहले',
+  },
+  {
+    id: '8',
+    title: 'चंद्रयान 3 की सफल लैंडिंग - भारत ने रचा इतिहास',
+    thumbnail: 'https://i.ytimg.com/vi/tgbNymZ7vqY/hqdefault.jpg',
+    views: '3.4M बार देखा गया',
+    date: '5 दिन पहले',
+  },
+  {
+    id: '9',
+    title: 'PM मोदी का नया संबोधन | जानें क्या बोले',
+    thumbnail: 'https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg',
+    views: '2.1M बार देखा गया',
+    date: '1 सप्ताह पहले',
+  },
+];
 export default function Home() {
+
   const ads = [
     {
       id: 1,
@@ -171,6 +236,7 @@ export default function Home() {
       <AdCarousel ads={ads} />
       <NewsSection newsItems={newsItem1} />
       <NewsSection2 newsItems={newsItem2} />
+      <VideoSection newsItems={mockVideos} />
      
     </div>
   );

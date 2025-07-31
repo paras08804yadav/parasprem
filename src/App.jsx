@@ -8,12 +8,13 @@ import Videos from "./pages/Videos";
 import BottomNavbar from "./components/BottomNavbar";
 import './styles/tailwind.css';
 import Header from "./components/Header"; 
+import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
       <div className="px-0 md:px-[200px]">
       <Header />
-      <div className="min-h-screen pb-16 bg-gray-50"> 
+      <div className="min-h-screen bg-gray-50"> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/emagazine" element={<EMagazine />} />
@@ -21,8 +22,11 @@ function App() {
           <Route path="/videos" element={<Videos />} />
         </Routes>
       </div>
-      <BottomNavbar />
       </div>
+      <div className="flex flex-col mt-0 mb-10">
+      <Footer />
+      </div>
+      <BottomNavbar />
     </Router>
   );
 }
