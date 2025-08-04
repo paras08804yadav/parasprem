@@ -1,5 +1,6 @@
 import React from 'react';
 import CategoryBar from "../components/CategoryBar";
+import HeroSection from "../components/HeroSection";
 import AdCarousel from "../components/AdCarousel";
 import NewsSection from "../components/NewsSection";
 import VideoSection from "../components/VideoSection";
@@ -233,6 +234,7 @@ export default function Home() {
   return (
       <div className="pt-16 pb-16">
       <CategoryBar />
+      <HeroSection />
       <AdCarousel ads={ads} />
       <NewsSection newsItems={newsItem1} />
       <NewsSection2 newsItems={newsItem2} />

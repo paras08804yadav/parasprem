@@ -8,15 +8,15 @@ export default function Footer() {
         <div className="space-y-2">
           <div className="flex justify-center items-center gap-2">
             <FaPhone className="text-white" />
-            <span>+1 (289) 389-6776</span>
+            <span>+91 7905842461</span>
           </div>
           <div className="flex justify-center items-center gap-2">
             <FaEnvelope className="text-white" />
-            <span>info@peapod.ca</span>
+            <span> support@parasprem.com</span>
           </div>
           <div className="flex justify-center items-center gap-2">
             <FaTwitter className="text-white" />
-            <span>@ Paras Prem</span>
+            <span>@ parasprem</span>
           </div>
         </div>
 
@@ -30,14 +30,7 @@ export default function Footer() {
         {/* Divider */}
         <hr className="border-gray-400 my-4 w-2/3 mx-auto" />
 
-        {/* PodSupport & Copyright */}
-        <div>
-          <div className="text-sm italic mb-1">📌  Paras Prem</div>
-          <div className="text-xs">
-            © 2025 Paras Prem.<br />
-            All Rights Reserved
-          </div>
-        </div>
+       
       </div>
     </footer>
   );

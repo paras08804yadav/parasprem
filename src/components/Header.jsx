@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const categories = [
-  "जागरण प्राइम",
   "पॉलिटिक्स",
   "दुनिया",
   "टेक",

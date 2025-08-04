@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
-      <div className="px-0 md:px-[200px]">
+      <div className="px-0 lg:px-[100px]">
       <Header />
       <div className="min-h-screen bg-gray-50"> 
         <Routes>
